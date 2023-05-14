@@ -63,3 +63,19 @@ span:hover {
 	align-self: flex-start;
 	margin-bottom: 0;
 }
+
+@media screen and (max-width: 980px) {
+	body, .container {
+		
+	}
+	
+	.container {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	ul {
+		flex-direction: row;
+	}
+}
