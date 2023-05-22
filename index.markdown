@@ -9,7 +9,7 @@ While I am currently learning Web Development at The Odin Project, I engage in b
 > If you get tired, learn to rest, not to quit.
 
 # Read my latest blogs
-<ol>
+<ol class="blog_li">
   {% for post in site.posts %}
     <li>
     	<p> {{ post.date || date_to_long_string}}</p>

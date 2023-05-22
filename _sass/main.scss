@@ -38,11 +38,13 @@ p {
 	font-size: 18px;
 	line-height: 1.5;
 	margin-top: 1.5rem;
+	font-family: 'Poppins', sans-serif;
 }
 
 h1, h2, h3, h4 {
 	color: $red-pantone;
-		font-size: 2rem;
+	font-size: 2rem;
+	font-family: 'Poiret One', cursive;
 	line-height: 1.5;
 }
 
@@ -63,6 +65,9 @@ margin: 0;
 		align-items: center;
 		background-color: $non-photo-blue;
 		padding: 0 1rem;
+		a:hover {
+			border-bottom: 2px solid $red-pantone;
+		}
 	}
 	main {
 		padding: 0 1rem;
@@ -70,17 +75,45 @@ margin: 0;
 		a {
 			text-decoration: underline 2px;
   		text-underline-position: under;
+  		transition: margin-left 0.2s ease-in-out;
 		}
+		a:hover {
+			margin-left: 1rem;
+		}
+		blockquote {
+			background-color: $cerulean;
+			color: $red-pantone;
+			padding-block-start: 1em;
+    	padding-block-end: 1em;
+    	padding-inline-start: 40px;
+    	padding-inline-end: 40px;
+    	border-left: 0.25rem solid $red-pantone;
+			p {
+				color: white;
+			}
+			}
 	}
 	footer {
 		display: flex;
-		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 		background-color: $non-photo-blue;
 		padding: 0 1rem;
-		height: 100px;
-		
+		height: auto;
+		ul {
+			list-style-type: none;
+			display: flex;
+			gap: 2rem;
+			align-self: flex-start;
+		}
+		li {
+			transition: margin-top 0.2s ease-in-out;
+		}
+		li:hover {
+			margin-top: 1rem;
+		}
 		p.credits {
-			align-self: flex-end;
+			display: flex;
 		} 
 	}
 
@@ -98,6 +131,14 @@ margin: 0;
 		footer, header, main {
 			padding: 0 8rem;
 		}
+	}
+}
+
+.blog_li {
+	margin: 0;
+  padding: 0;
+	li {
+		list-style-type: none;
 	}
 }
 
