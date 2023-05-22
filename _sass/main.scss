@@ -16,6 +16,12 @@ $gradient-top-left: linear-gradient(225deg, #e63946ff, #f1faeeff, #a8dadcff, #45
 $gradient-bottom-left: linear-gradient(315deg, #e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
 $gradient-radial: radial-gradient(#e63946ff, #f1faeeff, #a8dadcff, #457b9dff, #1d3557ff);
 
+/* Media queries */
+$small-max: 479px;
+$medium-min:  599px;
+$medium-max: 767px;
+$large-min:  1024px;
+
 * {
 	font-family: sans-serif;
 	box-sizing: border-box;
@@ -29,8 +35,9 @@ a {
 
 p {
 	color: $berkeley-blue;
-	font-size: 1rem;
+	font-size: 18px;
 	line-height: 1.5;
+	margin-top: 1.5rem;
 }
 
 h1, h2, h3, h4 {
@@ -55,20 +62,41 @@ margin: 0;
 		height: 72px;
 		align-items: center;
 		background-color: $non-photo-blue;
-		padding: 0 8rem;
+		padding: 0 1rem;
 	}
 	main {
-		padding: 0 8rem;
+		padding: 0 1rem;
+		
+		a {
+			text-decoration: underline 2px;
+  		text-underline-position: under;
+		}
 	}
 	footer {
 		display: flex;
 		justify-content: center;
 		background-color: $non-photo-blue;
-		padding: 0 8rem;
+		padding: 0 1rem;
 		height: 100px;
 		
 		p.credits {
 			align-self: flex-end;
+		} 
+	}
+
+	@media (max-width: $small-max) {
+		footer, header, main {
+			padding: 0 1rem;
+		}
+	}
+	@media (min-width: $medium-min) and (max-width: $medium-max) {
+		footer, header, main {
+			padding: 0 4rem;
+		}
+	}
+	@media (min-width: $large-min) {
+		footer, header, main {
+			padding: 0 8rem;
 		}
 	}
 }

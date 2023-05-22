@@ -8,20 +8,10 @@
 		<title> {{ page.title }} </title>
 	</head>
 	<body>
-	<header>
-		<img alt="profile-picture" src="/assets/images/profile.jpg" />
-		{% include nav.html %}
-	</header>
+	{% include header.html %}
 	<main>
 		{{ content }}
 	</main>
-	<footer>
-		<p class="credits"><a href="https://www.github.com/fideldemoz/">Fidel Livino Pedro</a>
-		 &mdash; <span class="year">&copy; </span></p>
-		<script type="text/javascript">
-		const span = document.querySelector(".year");
-		span.textContent += new Date().getFullYear();
-		</script>
-	</footer>
+	{% include footer.html %}
 	</body>
 </html>
