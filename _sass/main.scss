@@ -121,10 +121,18 @@ margin: 0;
 		footer, header, main {
 			padding: 0 1rem;
 		}
+		.blogs {
+			flex-direction: column;
+			gap: 1px;
+		}
 	}
 	@media (min-width: $medium-min) and (max-width: $medium-max) {
 		footer, header, main {
 			padding: 0 4rem;
+		}
+		.blogs {
+			flex-direction: column;
+			gap: 2px;
 		}
 	}
 	@media (min-width: $large-min) {
@@ -139,6 +147,17 @@ margin: 0;
   padding: 0;
 	li {
 		list-style-type: none;
+		display: flex;
+		gap: 6px;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	a {
+		text-decoration: none;
+		transition: margin-left 0.2s ease-in-out;
+	}
+	a:hover {
+		margin-left: 2rem;
 	}
 }
 
@@ -150,4 +169,21 @@ nav {
 
 .current {
 border-bottom: 2px solid $red-pantone;
+}
+
+.blogs {
+	display: flex;
+	gap: 6px;
+	justify-content: space-between;
+	align-items: center;
+	p, h2 {
+		margin: 4px 0 8px 0;
+	}
+	a.toright {
+		text-decoration: none;
+		transition: margin-right 0.2s ease-in-out;
+	}
+	a:hover {
+		margin-right: 2rem;
+	}
 }

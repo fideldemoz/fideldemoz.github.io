@@ -10,10 +10,11 @@ so that any one can understand.  Plus, my experience has shed light to efficient
 # My latest blogs
 <ul class="blog_li">
   {% for post in site.posts %}
-    <li>
+    <hr>
+    <li class="blogs">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.author }} - {{ post.date || date_to_long_string}}</p>
-      {{ post.excerpt }}
     </li>
+    {{ post.excerpt }}
   {% endfor %}
 </ul>
