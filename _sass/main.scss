@@ -41,7 +41,7 @@ p {
 	font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
 	color: $red-pantone;
 	font-size: 2rem;
 	font-family: 'Poiret One', cursive;
@@ -95,11 +95,32 @@ margin: 0;
 	}
 	footer {
 		display: flex;
-		align-items: center;
+		align-items: stretch;
 		flex-direction: column;
 		background-color: $non-photo-blue;
 		padding: 0 1rem;
 		height: auto;
+		.subscribe {
+			justify-content: space-between;
+			display: flex;
+			align-items: stretch;
+			
+			input[name="email"] {
+				width: 300px;
+				height: 30px;
+				border: 1px solid grey;
+				border-radius: 2px;
+			}
+			input[type="submit"] {
+				width: auto;
+				padding: 4px;
+				border: 1px solid grey;
+				border-radius: 4px;
+			}
+			@media (max-width: $medium-max) {
+				flex-direction: column;
+			}
+		}
 		ul {
 			list-style-type: none;
 			display: flex;
