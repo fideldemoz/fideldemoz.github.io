@@ -7,7 +7,10 @@ title: Read Fideldemoz's blog
 Dive deep into another experience and change the way you learn to code.  With my rich experience, I detail complex topics 
 so that any one can understand.  Plus, my experience has shed light to efficient methods that can benefit you.
 
-# My latest blogs
+Not only do I write about Programming, I also bring topics about System Maintenance, Operating Systems (oh, dear Linux) and Organization 
+tips.
+
+# A complete list of my blogs
 <ul class="blog_li">
   {% for post in site.posts %}
     <hr>

@@ -46,6 +46,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2rem;
 	font-family: 'Poiret One', cursive;
 	line-height: 1.5;
+	span {
+		color: $berkeley-blue;
+		font-weight: 300;
+	}
 }
 
 img[alt="profile-picture"] {
@@ -208,4 +212,26 @@ border-bottom: 2px solid $red-pantone;
 	a:hover {
 		margin-right: 2rem;
 	}
+}
+
+.btn {
+	margin-top: 16px;
+	padding: 8px;
+	display: block;
+	a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 700;
+	}
+	a:hover {
+		margin: none;
+	}
+}
+
+img.project {
+	border: 1px solid grey;
+	width: 60%;
+	@media (max-width: $medium-max) {
+				width: 100%;
+			}
 }
